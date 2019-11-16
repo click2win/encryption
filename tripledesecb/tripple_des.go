@@ -6,6 +6,10 @@ import (
 	"errors"
 )
 
+// **************************************************************************
+// TRIPPLE DES
+// **************************************************************************
+
 //ECB PKCS5Padding
 func PKCS5Padding(ciphertext []byte, blockSize int) []byte {
 	padding := blockSize - len(ciphertext)%blockSize
